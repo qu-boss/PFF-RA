@@ -1,0 +1,1 @@
+nohup python /Object_detection/QHM/yolov7_third/train.py > out.log 2>&1 &

@@ -1,0 +1,6 @@
+train: /Object_detection/FSZ/dataset/Mask/images/train  # 16551 images
+val: /Object_detection/FSZ/dataset/Mask/images/val  # 4952 images
+
+
+nc: 2
+names: ['mask', 'no-mask']
