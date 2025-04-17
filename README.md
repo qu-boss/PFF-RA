@@ -27,14 +27,18 @@
             x = x.mul(a)
             out = y1 + self.convs(x)
             return out
+            
+        def initialize(self):
+            weight_init(self)
 
 3.模型的训练，在train.py中指定配置参数，然后开始训练，默认参数为本文训练时所使用的参数，同时附上运行脚本run.sh
 
     nohup python /yolov7_third/train.py > out.log 2>&1 &
 
 4.本文所使用的数据集都是公开数据集，获取地址如下：
+
     PASCAL VOC:http://host.robots.ox.ac.uk/pascal/VOC/
+    
     KITTI：https://www.cvlibs.net/datasets/kitti/index.php
     
-        def initialize(self):
-            weight_init(self)
+
